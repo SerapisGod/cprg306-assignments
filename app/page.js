@@ -7,6 +7,7 @@ export default function Page() {
             <div style={{display: 'flex', flexDirection:'column'}}>
                 <Link href="/week-2">Week 2 Assignment Link</Link>
                 <Link href="/week-3">Week 3 Assignment Link</Link>
+                <Link href="/week-4">Week 4 Assignment Link</Link>
             </div>
         </main>
     );
