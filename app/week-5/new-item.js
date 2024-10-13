@@ -20,19 +20,28 @@ export default function NewItem() {
         };
         console.log(item);
 
-        alert('Name: ${name}, Category: ${category}, Quantity: ${quantity}');
+        alert(`Name: ${name}, Category: ${category}, Quantity: ${quantity}`);
 
         setName("");
         setCategory("produce");
         setQuantity(1);
         };
 
-    const increment = () => quantity < 20 && setQuantity(quantity + 1);
+    const increment = (e) => {
+        e.preventDefault();
+        if (quantity < 20) {
+            setQuantity(quantity + 1);
+        }
+    };
 
-    const decrement = () => quantity > 1 && setQuantity(quantity - 1);
+    const decrement = (e) => {
+        e.preventDefault();
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
 
     return (
-    
         <main className="flex justify-center w-full">
             <form class="p-2 m-4 bg-slate-900 text-black max-w-sm w-full">
                 
