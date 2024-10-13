@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import NewItem from "./new-item";
-import { Main } from "next/document";
+
 
 export default function NewItemPage() {
     return (
