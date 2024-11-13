@@ -10,10 +10,6 @@ export default function Page() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
   const router = useRouter(); 
 
-  useEffect(() => {
-  }, [user, router]);
-
-
   return (
     <div>
       <h1>Week 9</h1>
